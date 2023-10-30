@@ -1,9 +1,14 @@
 name: Publish Docker image
 
 on:
-  schedule:
-    - cron: '50 15 * * *'
   push:
+    branches:
+      - master
+  workflow_run:
+    workflows:
+      - Dependabot auto-merge
+    types:
+      - completed
   workflow_dispatch:
 
 jobs:
