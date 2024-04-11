@@ -1,4 +1,4 @@
-FROM php:8-cli@sha256:ecddf23d71cb6a133c7a23560beab31fbb5b660ff7531e11581340890c09b3a4
+FROM php:8-cli@sha256:5a0a56968cd5934208bc2380e47259694ff330476e55b94803b829f4a293f786
 
 RUN apt-get update \
   && apt-get install -y unzip git \
